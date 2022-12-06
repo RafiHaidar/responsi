@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Rent</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Edit Rent</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label position="floating">No</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="no"
+        readonly
+        placeholder="nomor"
+        type="text"
+      >
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Tanggal</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="tanggal"
+        placeholder="Tanggal"
+        type="date"
+      >
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Peminjaman</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="peminjaman"
+        placeholder="Peminjaman"
+        type="textfield"
+      >
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Lama</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="lama"
+        placeholder="Lama Peminjaman"
+        type="textfield"
+      >
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Total</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="total"
+        placeholder="Total Harga"
+        type="textfield"
+      >
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nama Peminjam</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="nama"
+        placeholder="Nama Peminjam"
+        type="textfield"
+      >
+      </ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button
+          type="button"
+          (click)="editData()"
+          color="primary"
+          shape="full"
+          expand="block"
+          >Edit
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>
