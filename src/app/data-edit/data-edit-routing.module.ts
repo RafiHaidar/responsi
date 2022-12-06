@@ -6,8 +6,8 @@ import { DataEditPage } from './data-edit.page';
 const routes: Routes = [
   {
     path: '',
-    component: DataEditPage
-  }
+    component: DataEditPage,
+  },
 ];
 
 @NgModule({
